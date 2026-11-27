@@ -1,0 +1,217 @@
+{
+  "users": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Shoes"
+    },
+    {
+      "id": 2,
+      "name": "Clothing"
+    },
+    {
+      "id": 3,
+      "name": "Accessories"
+    },
+    {
+      "id": 4,
+      "name": "Electronics"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Running Shoes",
+      "description": "Running Shoes - good quality, comfortable and made to last.",
+      "price": 436,
+      "categoryId": 1,
+      "image": "https://picsum.photos/seed/product1/400/300"
+    },
+    {
+      "id": 2,
+      "name": "Canvas Sneakers",
+      "description": "Canvas Sneakers - good quality, comfortable and made to last.",
+      "price": 573,
+      "categoryId": 1,
+      "image": "https://picsum.photos/seed/product2/400/300"
+    },
+    {
+      "id": 3,
+      "name": "Leather Loafers",
+      "description": "Leather Loafers - good quality, comfortable and made to last.",
+      "price": 710,
+      "categoryId": 1,
+      "image": "https://picsum.photos/seed/product3/400/300"
+    },
+    {
+      "id": 4,
+      "name": "Trekking Boots",
+      "description": "Trekking Boots - good quality, comfortable and made to last.",
+      "price": 847,
+      "categoryId": 1,
+      "image": "https://picsum.photos/seed/product4/400/300"
+    },
+    {
+      "id": 5,
+      "name": "Sports Sandals",
+      "description": "Sports Sandals - good quality, comfortable and made to last.",
+      "price": 984,
+      "categoryId": 1,
+      "image": "https://picsum.photos/seed/product5/400/300"
+    },
+    {
+      "id": 6,
+      "name": "Formal Oxfords",
+      "description": "Formal Oxfords - good quality, comfortable and made to last.",
+      "price": 1121,
+      "categoryId": 1,
+      "image": "https://picsum.photos/seed/product6/400/300"
+    },
+    {
+      "id": 7,
+      "name": "Cotton T-Shirt",
+      "description": "Cotton T-Shirt - good quality, comfortable and made to last.",
+      "price": 1258,
+      "categoryId": 2,
+      "image": "https://picsum.photos/seed/product7/400/300"
+    },
+    {
+      "id": 8,
+      "name": "Denim Jacket",
+      "description": "Denim Jacket - good quality, comfortable and made to last.",
+      "price": 1395,
+      "categoryId": 2,
+      "image": "https://picsum.photos/seed/product8/400/300"
+    },
+    {
+      "id": 9,
+      "name": "Slim Fit Jeans",
+      "description": "Slim Fit Jeans - good quality, comfortable and made to last.",
+      "price": 1532,
+      "categoryId": 2,
+      "image": "https://picsum.photos/seed/product9/400/300"
+    },
+    {
+      "id": 10,
+      "name": "Hooded Sweatshirt",
+      "description": "Hooded Sweatshirt - good quality, comfortable and made to last.",
+      "price": 1669,
+      "categoryId": 2,
+      "image": "https://picsum.photos/seed/product10/400/300"
+    },
+    {
+      "id": 11,
+      "name": "Formal Shirt",
+      "description": "Formal Shirt - good quality, comfortable and made to last.",
+      "price": 1806,
+      "categoryId": 2,
+      "image": "https://picsum.photos/seed/product11/400/300"
+    },
+    {
+      "id": 12,
+      "name": "Track Pants",
+      "description": "Track Pants - good quality, comfortable and made to last.",
+      "price": 1943,
+      "categoryId": 2,
+      "image": "https://picsum.photos/seed/product12/400/300"
+    },
+    {
+      "id": 13,
+      "name": "Leather Belt",
+      "description": "Leather Belt - good quality, comfortable and made to last.",
+      "price": 2080,
+      "categoryId": 3,
+      "image": "https://picsum.photos/seed/product13/400/300"
+    },
+    {
+      "id": 14,
+      "name": "Sports Cap",
+      "description": "Sports Cap - good quality, comfortable and made to last.",
+      "price": 2217,
+      "categoryId": 3,
+      "image": "https://picsum.photos/seed/product14/400/300"
+    },
+    {
+      "id": 15,
+      "name": "Canvas Backpack",
+      "description": "Canvas Backpack - good quality, comfortable and made to last.",
+      "price": 2354,
+      "categoryId": 3,
+      "image": "https://picsum.photos/seed/product15/400/300"
+    },
+    {
+      "id": 16,
+      "name": "Analog Watch",
+      "description": "Analog Watch - good quality, comfortable and made to last.",
+      "price": 2491,
+      "categoryId": 3,
+      "image": "https://picsum.photos/seed/product16/400/300"
+    },
+    {
+      "id": 17,
+      "name": "Sunglasses",
+      "description": "Sunglasses - good quality, comfortable and made to last.",
+      "price": 2628,
+      "categoryId": 3,
+      "image": "https://picsum.photos/seed/product17/400/300"
+    },
+    {
+      "id": 18,
+      "name": "Leather Wallet",
+      "description": "Leather Wallet - good quality, comfortable and made to last.",
+      "price": 2765,
+      "categoryId": 3,
+      "image": "https://picsum.photos/seed/product18/400/300"
+    },
+    {
+      "id": 19,
+      "name": "Wireless Earbuds",
+      "description": "Wireless Earbuds - good quality, comfortable and made to last.",
+      "price": 2902,
+      "categoryId": 4,
+      "image": "https://picsum.photos/seed/product19/400/300"
+    },
+    {
+      "id": 20,
+      "name": "Bluetooth Speaker",
+      "description": "Bluetooth Speaker - good quality, comfortable and made to last.",
+      "price": 3039,
+      "categoryId": 4,
+      "image": "https://picsum.photos/seed/product20/400/300"
+    },
+    {
+      "id": 21,
+      "name": "Power Bank",
+      "description": "Power Bank - good quality, comfortable and made to last.",
+      "price": 3176,
+      "categoryId": 4,
+      "image": "https://picsum.photos/seed/product21/400/300"
+    },
+    {
+      "id": 22,
+      "name": "Smart Watch",
+      "description": "Smart Watch - good quality, comfortable and made to last.",
+      "price": 3313,
+      "categoryId": 4,
+      "image": "https://picsum.photos/seed/product22/400/300"
+    },
+    {
+      "id": 23,
+      "name": "USB-C Charger",
+      "description": "USB-C Charger - good quality, comfortable and made to last.",
+      "price": 3450,
+      "categoryId": 4,
+      "image": "https://picsum.photos/seed/product23/400/300"
+    },
+    {
+      "id": 24,
+      "name": "Phone Stand",
+      "description": "Phone Stand - good quality, comfortable and made to last.",
+      "price": 3587,
+      "categoryId": 4,
+      "image": "https://picsum.photos/seed/product24/400/300"
+    }
+  ],
+  "cart": [],
+  "orders": []
+}
