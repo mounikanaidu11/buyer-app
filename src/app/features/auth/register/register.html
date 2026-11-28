@@ -1,0 +1,54 @@
+<div class="flex min-h-[80vh] items-center justify-center">
+  <div class="w-full max-w-md rounded-xl border border-gray-300 bg-white p-6 shadow-sm">
+    <h1 class="mb-4 text-center text-2xl font-semibold">Create account</h1>
+
+    <form [formGroup]="form" (ngSubmit)="submit()" class="flex flex-col gap-4" novalidate>
+      <div>
+        <label for="name" class="mb-1 block text-sm font-medium">Name</label>
+        <input id="name" type="text" formControlName="name" class="w-full rounded border px-3 py-2" />
+        <app-field-error [control]="form.controls.name" label="Name" />
+      </div>
+
+      <div>
+        <label for="email" class="mb-1 block text-sm font-medium">Email</label>
+        <input id="email" type="email" formControlName="email" class="w-full rounded border px-3 py-2" />
+        <app-field-error [control]="form.controls.email" label="Email" />
+      </div>
+
+      <div>
+        <label for="mobile" class="mb-1 block text-sm font-medium">Mobile</label>
+        <input id="mobile" type="tel" formControlName="mobile" class="w-full rounded border px-3 py-2" />
+        <app-field-error [control]="form.controls.mobile" label="Mobile" />
+      </div>
+
+      <div>
+        <label for="password" class="mb-1 block text-sm font-medium">Password</label>
+        <app-password-input [control]="form.controls.password" inputId="password" />
+        <app-field-error [control]="form.controls.password" label="Password" />
+      </div>
+
+      <div>
+        <label for="confirmPassword" class="mb-1 block text-sm font-medium">Confirm password</label>
+        <app-password-input [control]="form.controls.confirmPassword" inputId="confirmPassword" />
+        <app-field-error [control]="form.controls.confirmPassword" label="Confirm password" />
+        @if (form.hasError('mismatch') && form.controls.confirmPassword.dirty) {
+            <p class="text-sm text-red-600 mt-1">Passwords do not match</p>
+        }
+      </div>
+      @if (serverError()) {
+        <p class="text-sm text-red-600">{{ serverError() }}</p>
+      }
+      @if (success()) {
+        <p class="rounded border border-green-300 bg-green-50 px-3 py-2 text-sm text-green-700">
+            Account created successfully! Redirecting...
+        </p>
+        }
+
+      <button type="submit" [disabled]="loading() || success()" class="rounded bg-gray-900 px-4 py-2 text-white disabled:opacity-50">
+        {{ loading() ? 'Creating account...' : 'Register' }}
+      </button>
+
+      <p class="text-center text-sm">Already have an account? <a routerLink="/auth/login" class="underline">Login</a></p>
+    </form>
+  </div>
+</div>

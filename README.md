@@ -45,9 +45,8 @@ src/app/
 
 Done:
 - [x] Task 1: Project setup and structure
-
+- [x] Task 2: Registration and login
 Not done:
-- [ ] Task 2: Registration and login
 - [ ] Task 3: Product listing (search, filter, sort)
 - [ ] Task 4: Product details
 - [ ] Task 5: Cart
