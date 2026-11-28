@@ -1,0 +1,35 @@
+<div class="flex min-h-[80vh] items-center justify-center">
+  <div class="w-full max-w-md rounded-xl border border-gray-300 bg-white p-6 shadow-sm">
+    <h1 class="mb-4 text-center text-2xl font-semibold">Login</h1>
+
+    @if (sessionExpired) {
+      <p class="mb-4 rounded border border-yellow-300 bg-yellow-50 px-3 py-2 text-sm text-yellow-800">
+        Your session expired. Please log in again.
+      </p>
+    }
+
+    <form [formGroup]="form" (ngSubmit)="submit()" class="flex flex-col gap-4" novalidate>
+      <div>
+        <label for="email" class="mb-1 block text-sm font-medium">Email</label>
+        <input id="email" type="email" formControlName="email" class="w-full rounded border px-3 py-2" />
+        <app-field-error [control]="form.controls.email" label="Email" />
+      </div>
+
+      <div>
+        <label for="password" class="mb-1 block text-sm font-medium">Password</label>
+        <app-password-input [control]="form.controls.password" inputId="password" />
+        <app-field-error [control]="form.controls.password" label="Password" />
+      </div>
+
+      @if (serverError()) {
+        <p class="text-sm text-red-600">{{ serverError() }}</p>
+      }
+
+      <button type="submit" [disabled]="loading()" class="rounded bg-gray-900 px-4 py-2 text-white disabled:opacity-50">
+        {{ loading() ? 'Logging in...' : 'Login' }}
+      </button>
+
+      <p class="text-center text-sm">New here? <a routerLink="/auth/register" class="underline">Create an account</a></p>
+    </form>
+  </div>
+</div>

@@ -1,5 +1,41 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "mouni@gmail.com",
+      "password": "$2a$10$WsbRxaVgjv35WADKhQzgk.5q32ezzfzGCiMj6G.CG/KstQdVzZo6u",
+      "name": "mouni",
+      "mobile": "7207003341",
+      "id": 1
+    },
+    {
+      "email": "Mounika11@gmail.com",
+      "password": "$2a$10$jno1MtaTYn.X3NWawl3zmuLhUkYT/I1IZO4lzSFv00IXUcua1aCju",
+      "name": "Mouni",
+      "mobile": "7207003341",
+      "id": 2
+    },
+    {
+      "email": "Mounika10@gmail.com",
+      "password": "$2a$10$f64W6s/w1ThvZNGbBN0Kv.IXhzEydDfS4NlXpF02/pyvzuv/CqeYK",
+      "name": "Mouni",
+      "mobile": "6304071175",
+      "id": 3
+    },
+    {
+      "email": "sai@gmail.com",
+      "password": "$2a$10$KHRoaOc/5xXkGMY3Q/ZwwedB5Cxaddi84zCHWO5PQDH5AtJZ5SmNS",
+      "name": "sai",
+      "mobile": "9948422212",
+      "id": 4
+    },
+    {
+      "email": "Kittu11@gmail.com",
+      "password": "$2a$10$4Jx8IQICpsBModyj0LFzMume2UqVSv9ipThVazQ34cMrS/20hRV.m",
+      "name": "Kittu",
+      "mobile": "9658433321",
+      "id": 5
+    }
+  ],
   "categories": [
     {
       "id": 1,

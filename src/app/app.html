@@ -3,10 +3,13 @@
   <nav class="hidden md:flex items-center gap-2">
     <a routerLink="/products" routerLinkActive="font-medium" class="side-nav-item px-3 py-2">Products</a>
     <a routerLink="/cart" routerLinkActive="font-medium" class="side-nav-item px-3 py-2">Cart (0)</a>
-    <a routerLink="/auth/login" routerLinkActive="font-medium" class="side-nav-item px-3 py-2">Login</a>
+    @if (auth.isLoggedIn()) {
+      <button type="button" (click)="auth.logout()" class="side-nav-item px-3 py-2">Logout</button>
+    } @else {
+      <a routerLink="/auth/login" class="side-nav-item px-3 py-2">Login</a>
+      <a routerLink="/auth/register" class="side-nav-item px-3 py-2">Register</a>
+    }
   </nav>
-
-  <!-- Mobile menu button -->
   <button type="button" class="icon-toggle md:hidden" (click)="toggleMenu()" aria-label="Toggle menu">
     <svg width="24" height="24" viewBox="0 0 24 24">
       <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" />
@@ -14,12 +17,18 @@
   </button>
 </header>
 
-<!-- Mobile links -->
+
 @if (menuOpen()) {
   <nav class="md:hidden flex flex-col gap-1 p-2 border-b bg-white">
     <a routerLink="/products" (click)="closeMenu()" class="side-nav-item px-3 py-2">Products</a>
     <a routerLink="/cart" (click)="closeMenu()" class="side-nav-item px-3 py-2">Cart (0)</a>
-    <a routerLink="/auth/login" (click)="closeMenu()" class="side-nav-item px-3 py-2">Login</a>
+    @if (auth.isLoggedIn()) {
+      <span class="px-3 py-2 text-sm">Hi, {{ auth.currentUser()?.name }}</span>
+      <button type="button" (click)="auth.logout(); closeMenu()" class="side-nav-item px-3 py-2 text-left">Logout</button>
+    } @else {
+      <a routerLink="/auth/login" (click)="closeMenu()" class="side-nav-item px-3 py-2">Login</a>
+      <a routerLink="/auth/register" (click)="closeMenu()" class="side-nav-item px-3 py-2">Register</a>
+    }
   </nav>
 }
 
